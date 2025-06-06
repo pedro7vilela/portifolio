@@ -7,9 +7,42 @@
 
 body{
     box-sizing: border-box;
-    height: 100vh;
+    height: auto;
     background-color: black;
     color: aliceblue;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 8%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho__menu__link{
+    
+    text-decoration: none;
+    color: #58b1c6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    
+}
+
+.cabecalho__menu__link::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #58b1c6;
+    transition: 0.5s ease-in-out;
+}
+
+.cabecalho__menu__link:hover::after{
+    width: 100%;
 }
 
 .destaque{
@@ -20,7 +53,7 @@ body{
     display: flex;
     align-items: center;   
     justify-content: space-between; 
-    margin: 5% 8%;
+    padding: 3% 8%;
 
 }
 
@@ -67,7 +100,7 @@ body{
     color: #f6f6f6;
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
-    transition: all 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -82,3 +115,11 @@ body{
     border: solid #58b1c6;    
 }
 
+.rodape{
+    padding: 10px;
+    background-color: #58b1c6;
+    color: #000000;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
