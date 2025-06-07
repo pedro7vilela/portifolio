@@ -4,7 +4,7 @@
     --cor-primaria: #000000;
     --cor-secundaria: #f6f6f6;
     --cor-terciaria: #169976;
-    --cor-quartenaria: #222222;
+    --cor-hover: #222222;
 
     --fonte-primaria: "Krona One", sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -36,7 +36,7 @@ body{
     text-decoration: none;
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     
@@ -68,7 +68,7 @@ body{
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     font-family: var(--fonte-primaria);
     display: flex;
     flex-direction: column;
@@ -76,7 +76,7 @@ body{
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 28px;
+    font-size: 1.75rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -90,37 +90,38 @@ body{
 
 
 .apresentacao__link__subtitulo{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: var(--fonte-primaria);
     font-weight: 400;
 
 }
 
 
-.apresentacao__links__link{
+.apresentacao__links__nav{
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 315px;
+    width: 50%;
     text-align: center;
     padding: 21.5px 0;
     border-radius: 16px;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
-    font-size: 26px;
+    font-size: 1.625rem;
     transition: 0.3s ease-in-out;
 }
 
 
-.apresentacao__links__link:hover{
-    background-color: var(--cor-quartenaria);
+.apresentacao__links__nav:hover{
+    background-color: var(--cor-hover);
     letter-spacing: 0.2em;
     box-shadow: 0 0 35px var(--cor-terciaria);
 }
 
 .imagem{
+    width: 30%;
     border-radius: 10%;
     border: solid var(--cor-terciaria);    
 }
@@ -131,5 +132,34 @@ body{
     color: var(--cor-primaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 15px;
+    font-size: 1rem;
+}
+
+/* curriculo */
+
+.conteiner{
+    width: 75%;
+    margin: auto;
+    border: 2px solid #169976;
+    height: auto;
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    border-radius: 2%;
+}
+
+.linha{
+    width: 92%;
+    height: 1px;
+    background-color: var(--cor-terciaria);
+    align-self: center;
+    margin: 2% 0;
+    
+}
+
+.curriculo__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.125rem;
 }
