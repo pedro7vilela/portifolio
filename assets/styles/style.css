@@ -113,7 +113,7 @@ body{
     width: 50%;
     text-align: center;
     padding: 21.5px 0;
-    border-radius: 16px;
+    border-radius: 1rem;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
@@ -173,9 +173,6 @@ body{
 }
 
 @media (max-width: 850px) {
-    .apresentacao {
-        flex-direction: column-reverse;
-    }
 
     .cabecalho__menu{
         padding: 1.2rem;
@@ -205,6 +202,23 @@ body{
 
     .open{
         display: block;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 3%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    
+}
+
+@media (max-width: 600px){
+    .apresentacao__links__nav__img{
+        display: none;
     }
 }
 
