@@ -4,7 +4,7 @@ function menuShow() {
         cabecalho__mobile.classList.remove('open');
         document.querySelector('.icon').src = "assets/img/icons8-grip-lines-32.png"
     } else {
-        cabecalho__mobile.classList.add('open')
+        cabecalho__mobile.classList.add('open');
         document.querySelector('.icon').src = "assets/img/icons8-x-32.png";
     }
 
